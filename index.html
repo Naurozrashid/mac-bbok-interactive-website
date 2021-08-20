@@ -27,21 +27,21 @@
                 </div>
                 <div>
                     <h4 class="mt-5 mb-4">Storage</h4>
-                    <button class="btn btn-outline-secondary " type="submit">256GB SSD storage</button>
-                    <button class="btn btn-outline-secondary " type="submit">512GB SSD storage</button>
-                    <button class="btn btn-outline-secondary " type="submit">1TB SSD storage</button>
+                    <button id="addStorage1" class="btn btn-outline-secondary " type="submit">256GB SSD storage</button>
+                    <button id="addStorage2" class="btn btn-outline-secondary " type="submit">512GB SSD storage</button>
+                    <button id="addStorage3" class="btn btn-outline-secondary " type="submit">1TB SSD storage</button>
                 </div>
                 <div class="row">
                     <h4 class="mt-5">Choose your delivery option</h4>
-                    <button class="btn btn-outline-secondary col-lg-6" type="submit">Friday,Aug 25 Free Prime Delivery</button>
-                    <button class="btn btn-outline-secondary col-lg-6" type="submit">Friday,Aug 21 Delivery Charge $20</button>
+                    <button id="deliverybtn1" class="btn btn-outline-secondary col-lg-6" type="submit">Friday,Aug 25 Free Prime Delivery</button>
+                    <button id="deliverybtn2" class="btn btn-outline-secondary col-lg-6" type="submit">Friday,Aug 21 Delivery Charge $20</button>
                 </div>
                 <div class="row">
                   <div class="col-lg-8">
                     <table class="mt-5 table fw-bold fs-5">
                         <tr>
                             <td>Best Price</td>
-                            <td>$<span>1299</span></td>
+                            <td>$<span id="best-price">1299</span></td>
                         </tr>
                         <tr>
                             <td>Extra Memory Cost</td>
@@ -49,16 +49,16 @@
                         </tr>
                         <tr>
                             <td>Extra Storage Cost</td>
-                            <td>$<span>0</span></td>
+                            <td>$<span id="addStorageCost">0</span></td>
                         </tr>
                         <tr>
                             <td>Delivery Charge</td>
-                            <td>$<span>0</span></td>
+                            <td>$<span id="addDeliveryCost">0</span></td>
                         </tr>
                         <tfoot>
                             <tr>
                                 <td>Total Price</td>
-                                <td>$<span>1299</span></td>
+                                <td>$<span id="total-price">1299</span></td>
                             </tr>
                           </tfoot>
                         
@@ -68,14 +68,14 @@
                 </div>
                 <div>
                     <h5>Add Promo Code</h5>
-                    <input type="text">
-                    <button type="button" class="btn btn-danger">Apply</button>
+                    <input id="discount-input" type="text">
+                    <button id="apply-btn" type="button" class="btn btn-danger">Apply</button>
                 </div>
                 
             </div>
         </section>
         <hr>
-        <h2 class="text-center">Total: $<span>1299</span></h1>
+        <h2 class="text-center">Total: $<span id="total-priceMain">1299</span></h1>
     </main>
   
    <!-- bootstrap js link -->
