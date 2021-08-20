@@ -88,12 +88,26 @@ document.getElementById('deliverybtn2').addEventListener('click',function(){
 
 // apply button click
 document.getElementById('apply-btn').addEventListener('click',function(){
-
+    console.log(100);
+    totalCount();
+   
 })
 
 // total count function with discount
 
 function totalCount(){
-    const input=document.getElementById(discount-input);
+    const input=document.getElementById('discount-input');
     const inputValue=input.value;
+    if(inputValue=='stevekaku'){
+       const pretotal=totalPrice();
+       const newtotal=pretotal-(pretotal*0.2);
+       document.getElementById('total-priceMain').innerText=  newtotal;
+       input.value='';
+        
+        
+    }
+    else{
+        input.value='';
+       
+    }
 }
