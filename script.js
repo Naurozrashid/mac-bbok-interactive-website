@@ -88,7 +88,7 @@ document.getElementById('deliverybtn2').addEventListener('click',function(){
 
 // apply button click
 document.getElementById('apply-btn').addEventListener('click',function(){
-    console.log(100);
+  
     totalCount();
    
 })
